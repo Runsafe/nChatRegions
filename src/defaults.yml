@@ -1,1 +1,2 @@
-option: value
+regionPrefixes:
+  gameroom-pvp_arena: '&c[PvP]'

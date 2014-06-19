@@ -1,10 +1,6 @@
 name: nChatRegions
 main: no.runsafe.nchatregions.nChatRegions
 version: 1.0.@BUILD@
-authors: []
-depend: []
-description:
-commands:
-  something:
-    description:
-    aliases: []
+authors: [mortenn]
+depend: [nChat,RunsafeWorldGuardBridge]
+description: Override world tags for regions
