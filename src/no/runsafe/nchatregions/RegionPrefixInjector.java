@@ -24,7 +24,7 @@ public class RegionPrefixInjector implements ILocationTagManipulator, IConfigura
 	@Override
 	public String getLocationTag(ICommandExecutor player, @Nonnull String tag)
 	{
-		return player instanceof IPlayer ? getRegionTag((IPlayer) player, tag) : tag;
+		return player instanceof IPlayer && ((IPlayer) player).isOnline() ? getRegionTag((IPlayer) player, tag) : tag;
 	}
 
 	@Nonnull
