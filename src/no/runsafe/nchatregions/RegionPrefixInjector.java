@@ -30,7 +30,7 @@ public class RegionPrefixInjector implements ILocationTagManipulator, IConfigura
 	@Nonnull
 	private String getRegionTag(@Nonnull IPlayer player, @Nonnull String tag)
 	{
-		if (!player.isOnline() || player.isVanished())
+		if (!player.isOnline() || player.isVanished() || player.getLocation() == null)
 			return tag;
 		String worldName = player.getWorldName();
 		List<String> regions = worldGuard.getRegionsAtLocation(player.getLocation());
